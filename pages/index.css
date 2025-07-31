@@ -184,6 +184,8 @@
 .form {
   display: flex;
   flex-direction: column;
+  max-width: 385px;
+  min-width: 320px;
 }
 
 .form__fieldset {
@@ -209,8 +211,6 @@
   font-family: Inter;
   font-size: 20px;
   line-height: 30px;
-  max-width: 385px;
-  min-width: 320px;
 }
 
 .form__input::placeholder {
@@ -237,19 +237,36 @@
   background-color: #3f96f3;
 }
 
+/* Contenedor principal para alinear el checkbox y el texto */
 .form__checkbox-wrapper {
   display: flex;
-  column-gap: 12px;
   align-items: center;
+  gap: 12px;
+  cursor: pointer;
   justify-content: center;
 }
 
+/* OCULTA el checkbox original del navegador de forma definitiva */
 .form__checkbox {
-  border-radius: 2px;
-  height: 20px;
+  display: none;
+}
+
+/* Estilos para la casilla personalizada (el <span>) SIN MARCAR */
+.form__custom-checkbox {
   width: 20px;
-  font-family: Inter;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  height: 20px;
+  border: 1px solid #838383;
+  border-radius: 2px;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+/* Estilos para la casilla CUANDO el input original está marcado */
+.form__checkbox:checked + .form__custom-checkbox {
+  background-color: #1878dc;
+  border-color: #1878dc;
+  /* Esta línea sí necesita el archivo SVG para funcionar */
+  background-image: url("../images/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
