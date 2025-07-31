@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 80px 0 30px;
+  padding-top: 30px;
+}
+
+.nav__logo {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  column-gap: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000000;
+  transition: opacity 0.2s ease;
+}
+
+.nav__link:hover {
+  opacity: 50%;
+}
