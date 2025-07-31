@@ -1,10 +1,7 @@
 .menu {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  background-image: url(../images/background_menu.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #fff url(../images/background_menu.svg) no-repeat center;
 }
 
 .menu__title {

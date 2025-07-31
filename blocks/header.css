@@ -1,11 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
-  background-image: url("../images/background_header.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: #ffffff url("../images/background_header.svg") no-repeat center/cover;
   height: 800px;
   position: relative; /* Ensure header is positioned relatively */
 }

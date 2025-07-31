@@ -48,7 +48,6 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
-  transition: background-color 0.3s ease;
 }
 
 .form__button:hover {
@@ -64,9 +63,16 @@
   justify-content: center;
 }
 
-/* OCULTA el checkbox original del navegador de forma definitiva */
+/* Oculta el checkbox original visualmente, pero lo mantiene accesible */
 .form__checkbox {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /* Estilos para la casilla personalizada (el <span>) SIN MARCAR */
@@ -77,14 +83,20 @@
   border-radius: 2px;
   background-color: #ffffff;
   transition: all 0.2s ease;
+  display: inline-block; /* Asegura que el span sea visible */
 }
 
 /* Estilos para la casilla CUANDO el input original está marcado */
 .form__checkbox:checked + .form__custom-checkbox {
   background-color: #1878dc;
   border-color: #1878dc;
-  /* Esta línea sí necesita el archivo SVG para funcionar */
   background-image: url("../images/check.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* Añade un outline al checkbox personalizado cuando el original recibe foco */
+.form__checkbox:focus + .form__custom-checkbox {
+  outline: 2px solid #3f96f3;
+  outline-offset: 2px;
 }
