@@ -7,6 +7,7 @@
   background-position: center;
   background-size: cover;
   height: 800px;
+  position: relative; /* Ensure header is positioned relatively */
 }
 
 .header__title {
@@ -44,10 +45,10 @@
 
 .header__image {
   position: absolute;
-  top: 124px;
-  right: 5px;
-  width: 646px;
-  height: 568px;
+  top: 100px;
+  right: 20px;
+  width: 45%;
+  height: auto;
 }
 
 .header__footer {

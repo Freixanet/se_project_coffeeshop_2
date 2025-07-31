@@ -16,18 +16,21 @@ Experience the cozy atmosphere of TripleTen Coffee Shop through this immersive l
 ## ✨ Key Features
 
 ### 🎨 **Design & UX**
+
 - **Responsive Layout**: Optimized for screens 1100px - 1600px
 - **Custom Typography**: Inter and Noto Serif font combinations
 - **Interactive Elements**: Smooth hover effects and transitions
 - **Coffee-Themed Design**: Warm color palette and coffee-inspired imagery
 
 ### 🏗️ **Advanced Techniques**
+
 - **Flat BEM Methodology**: Scalable and maintainable CSS architecture
 - **CSS Animations**: Custom transforms and keyframe animations
 - **Embedded Media**: YouTube iframe integration for recipe videos
 - **Advanced Positioning**: Complex layouts with absolute and relative positioning
 
 ### 📱 **Sections & Content**
+
 - **Hero Section**: Striking coffee shop presentation with hours and location
 - **Recipes Section**: Embedded YouTube videos with custom styling
 - **Reservation System**: (In development)
@@ -50,6 +53,7 @@ Experience the cozy atmosphere of TripleTen Coffee Shop through this immersive l
 ## 🛠️ Installation
 
 ### Prerequisites
+
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 - Code editor (VS Code recommended)
 - Basic understanding of HTML/CSS
@@ -105,17 +109,20 @@ se_project_coffeeshop/
 ## 🔧 Technologies Used
 
 ### Core Technologies
+
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) **Semantic HTML5** with proper meta tags
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) **Advanced CSS3** with animations and transforms
 - ![Google Fonts](https://img.shields.io/badge/Google%20Fonts-4285F4?style=flat&logo=google&logoColor=white) **Google Fonts** (Inter & Noto Serif)
 
 ### Methodologies & Architecture
+
 - **Flat BEM**: Block Element Modifier methodology for scalable CSS
 - **CSS Custom Properties**: Modern variable usage for maintainable styles
 - **Semantic HTML**: Accessibility-first markup structure
 - **Progressive Enhancement**: Mobile-first responsive approach
 
 ### External Integrations
+
 - **YouTube Embed API**: Integrated recipe video content
 - **Normalize.css v8.0.1**: Cross-browser consistency
 - **Custom SVG Graphics**: Scalable vector illustrations
@@ -123,18 +130,21 @@ se_project_coffeeshop/
 ## 🎯 Features Implemented
 
 ### 🎨 Visual Design
+
 - [x] Custom coffee shop branding and color scheme
 - [x] Advanced typography with Google Fonts integration
 - [x] Background images with proper positioning and sizing
 - [x] Responsive image handling with proper alt attributes
 
 ### 🏗️ Technical Implementation
+
 - [x] Flat BEM methodology for organized CSS
 - [x] CSS animations and transform effects
 - [x] Embedded YouTube iframes with custom styling
 - [x] Advanced flexbox layouts for complex designs
 
 ### 📱 User Experience
+
 - [x] Smooth navigation between sections
 - [x] Interactive video content integration
 - [x] Professional business hours and contact display
@@ -143,6 +153,7 @@ se_project_coffeeshop/
 ## 🎨 Design System
 
 ### Color Palette
+
 ```css
 :root {
   --primary-blue: #3f96f3;
@@ -154,6 +165,7 @@ se_project_coffeeshop/
 ```
 
 ### Typography Scale
+
 ```css
 /* Primary Font - Inter */
 font-family: "Inter", Arial, sans-serif;
@@ -162,14 +174,15 @@ font-family: "Inter", Arial, sans-serif;
 font-family: "Noto Serif", serif;
 
 /* Font Sizes */
---heading-xl: 60px;    /* Hero accent text */
---heading-l: 52px;     /* Main headings */
---heading-m: 44px;     /* Section titles */
---body-l: 16px;        /* Body text */
---body-s: 14px;        /* Footer text */
+--heading-xl: 60px; /* Hero accent text */
+--heading-l: 52px; /* Main headings */
+--heading-m: 44px; /* Section titles */
+--body-l: 16px; /* Body text */
+--body-s: 14px; /* Footer text */
 ```
 
 ### Layout System
+
 ```css
 /* Container Constraints */
 .page {
@@ -186,6 +199,7 @@ font-family: "Noto Serif", serif;
 ## 🏆 Best Practices Implemented
 
 ### HTML Structure
+
 ```html
 <!-- Semantic markup with proper meta tags -->
 <meta name="description" content="Coffee Shop Landing Page" />
@@ -200,6 +214,7 @@ font-family: "Noto Serif", serif;
 ```
 
 ### CSS Architecture
+
 ```css
 /* BEM methodology example */
 .recipes__video-caption {
@@ -215,30 +230,37 @@ font-family: "Noto Serif", serif;
 ```
 
 ### Performance Optimization
+
 ```html
 <!-- Preconnect to Google Fonts for faster loading -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
 <!-- Optimized font loading -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 ## 🚀 Development Roadmap
 
 ### Current Status ✅
+
 - [x] Header section with navigation and hero content
 - [x] Recipes section with embedded YouTube videos
 - [x] Responsive design foundation
 - [x] BEM methodology implementation
 
 ### In Progress 🚧
+
 - [ ] **Reservation Section**: Custom form with validation
 - [ ] **Menu Section**: Interactive menu display
 - [ ] **About Section**: Coffee shop story and values
 - [ ] **Footer**: Complete contact information and social links
 
 ### Future Enhancements 🎯
+
 - [ ] **JavaScript Interactivity**: Form validation and smooth scrolling
 - [ ] **Mobile Optimization**: Enhanced responsive breakpoints
 - [ ] **Animation Library**: Advanced CSS animations and micro-interactions
@@ -248,6 +270,7 @@ font-family: "Noto Serif", serif;
 ## 🧪 Development Scripts
 
 ### Code Quality
+
 ```bash
 # Format code with Prettier (if configured)
 npx prettier --write .
@@ -260,6 +283,7 @@ npx prettier --write .
 ```
 
 ### Local Development
+
 ```bash
 # Serve locally (Python 3)
 python -m http.server 8000
@@ -342,6 +366,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy...
 
 [⬆ Back to top](#-tripleten-coffee-shop)
 
-*Crafted with ❤️ and lots of ☕ by [Marcos Freixanet](https://github.com/freixanet)*
+_Crafted with ❤️ and lots of ☕ by [Marcos Freixanet](https://github.com/freixanet)_
 
 </div>
