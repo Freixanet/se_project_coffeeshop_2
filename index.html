@@ -47,11 +47,11 @@
           alt="Drawing of the inside of a coffee shop with a barista and customers"
         />
         <div class="header__footer">
-          <span>
+          <div>
             <p class="header__paragraph">Hours:</p>
             <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
             <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
-          </span>
+          </div>
           <p class="header__paragraph">
             200 Success Avenue, The Town of Triple Peaks
           </p>
@@ -96,7 +96,58 @@
             </figure>
           </div>
         </section>
-        <section class="reservation"></section>
+        <section class="reservation">
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="reservation__form form" action="#">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="name">Name*</label>
+              <input
+                type="text"
+                class="form__input"
+                id="name"
+                name="name"
+                placeholder="Nacho Vidal"
+                required
+              />
+              <label class="form__label" for="guests">Number of guests*</label>
+              <input
+                type="number"
+                class="form__input"
+                id="guests"
+                name="guests"
+                placeholder="1 - 8"
+                required
+              />
+              <label class="form__label" for="datetime">Date & time*</label>
+              <input
+                type="datetime-local"
+                class="form__input"
+                id="datetime"
+                name="datetime"
+                required
+              />
+              <label class="form__label" for="email">Your email*</label>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                name="email"
+                placeholder="nachovidal@email.com"
+                required
+              />
+            </fieldset>
+            <button class="form__button">Book a table</button>
+            <label class="form__checkbox-wrapper" for="terms">
+              <input
+                type="checkbox"
+                class="form__checkbox"
+                id="terms"
+                required
+              />
+              I agree with the terms of use
+            </label>
+          </form>
+        </section>
         <section class="menu"></section>
         <section class="about"></section>
       </main>
